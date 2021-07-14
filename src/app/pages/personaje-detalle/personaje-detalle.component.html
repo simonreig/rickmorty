@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col fadeIn fast">
+            <h2>{{nombre}}</h2>
+        </div>
+        <div class="col fadeIn fast">
+            <button class="btn btn-outline-danger" (click)="volver()"><i class="fas fa-long-arrow-alt-left"></i> Regresar</button>
+        </div>
+    </div>
+    <hr>
+    <div class="row fadeIn slow">
+        <div class="clearfix">
+        <div class="col-4">
+            <img [src]="image" class="col-md-8 float-md-start mb-3 ms-md-5" alt="">
+        </div>
+        <div class="col mt-3">
+            <p><u>Nombre:</u> {{nombre}}</p>
+            <p><u>Género:</u> {{genero}}</p>
+            <p><u>Especie:</u> {{especie}}</p>
+            <p><u>Origen:</u> {{origen}}</p>
+            <p><u>Ubicación actual:</u> {{location}}</p>
+            <p><u>Aparece en:</u> {{cantEp}} episodios</p>
+        </div>
+    </div>
+    </div>
+
+</div>

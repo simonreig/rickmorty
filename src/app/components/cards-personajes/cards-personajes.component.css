@@ -1,0 +1,11 @@
+h5,
+p{
+    color: black;
+}
+
+.margen{
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,18 @@
+<div class="container">
+    <ul class="list-group">
+        <li class="list-group-item m-3"  *ngFor="let lugar of lugares">
+            <h2> <b>{{lugar.name}}</b></h2>
+            <div class="row">
+                <div class="col">
+                    <p><b>Dimensión:</b> {{lugar.dimension}}</p>
+                </div>
+                <div class="col">
+                    <p><b>Tipo:</b> {{lugar.type}}</p>
+                </div>
+                <div class="col">
+                    <p><b>Cantidad de residentes:</b> {{lugar.residents.length}}</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

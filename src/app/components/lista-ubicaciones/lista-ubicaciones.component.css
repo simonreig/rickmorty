@@ -1,0 +1,12 @@
+h2,
+h3,
+h4,
+h5,
+p{
+    color: rgb(8, 178, 201);
+}
+
+li{
+    border-radius: 10px;
+    background-color: rgba(235, 235, 235, 255);
+}

@@ -1,0 +1,18 @@
+<div class="container">
+    <ul class="list-group">
+        <li class="list-group-item m-3"  *ngFor="let episodio of episodio">
+            <h2> <b>{{episodio.name}}</b></h2>
+            <div class="row">
+                <div class="col">
+                    <p><b>Número:</b> {{episodio.id}}</p>
+                </div>
+                <div class="col">
+                    <p><b>Al aire:</b> {{episodio.air_date}}</p>
+                </div>
+                <div class="col">
+                    <p><b>Cantidad de personajes:</b> {{episodio.characters.length}}</p>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

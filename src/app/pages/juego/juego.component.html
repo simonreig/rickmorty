@@ -1,0 +1,53 @@
+<div class="container mt-3">
+    <div class="text-center">
+        <h2>Juego de preguntas Rick y Morty</h2>
+        <hr>
+        <br>
+        <button class="btn btn-info azul" (click)="empezar()" *ngIf="comenzar">Comenzar!</button>
+    </div>
+    <p>Nota: idioma inglés. Son 3 preguntas sobre personajes.</p>
+
+    <div class="row fadeIn slow" *ngIf="!comenzar && !termino">
+
+        <div class="clearfix" *ngIf="primero">
+            <div class="col-4">
+                <img [src]="personaje.image" class="col-md-8 float-md-start mb-3 ms-md-5" alt="">
+            </div>
+            <div class="col mt-3">
+                <h2>¿En cuántos episodios aparece {{personaje.name}}?</h2>
+                <input type="number" class="form-control" [(ngModel)]="episodios" name="episodios">
+                <button class="btn btn-outline-warning" (click)="cambiar1()">Enviar</button>
+            </div>
+        </div>
+
+    <div class="clearfix" *ngIf="segundo">
+        <div class="col-4">
+            <img [src]="personaje.image" class="col-md-8 float-md-start mb-3 ms-md-5" alt="">
+        </div>
+        <div class="col mt-3">
+            <h2>¿Cómo se llama este personaje?</h2>
+            <input type="text" class="form-control" [(ngModel)]="name" name="nombre">
+            <button class="btn btn-outline-warning" (click)="cambiar2()">Enviar</button>
+        </div>
+    </div>
+
+    <div class="clearfix" *ngIf="tercero">
+        <div class="col-4">
+            <img [src]="personaje.image" class="col-md-8 float-md-start mb-3 ms-md-5" alt="">
+        </div>
+        <div class="col mt-3">
+            <h2>Género de {{personaje.name}}. Pista: Male, Female, Unknown</h2>
+            <input type="text" class="form-control" [(ngModel)]="genero" name="genero">
+            <button class="btn btn-outline-warning" (click)="terminado()">Enviar</button>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div *ngIf="termino">
+        <h2>Terminó el Juego!</h2>
+        <h3>Puntaje: {{puntaje}}/3</h3>
+        <br>
+        <button class="btn btn-outline-danger" (click)="jugardenuevo()">Volver a jugar</button>
+    </div>
+</div>

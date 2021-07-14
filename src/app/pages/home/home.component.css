@@ -1,0 +1,32 @@
+.card{
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+button{
+    background-color: rgb(8, 178, 201);
+}
+
+.caja{
+    background-color: white;
+    height: 150px;
+}
+
+.container{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+
+@media all and (max-width: 760px) {
+
+    .caja{
+        background-color: white;
+        height: 100px;
+    }
+
+}

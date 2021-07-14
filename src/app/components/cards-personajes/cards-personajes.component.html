@@ -1,0 +1,11 @@
+<div class="row">
+      <div class="card margen text-center" style="width: 18rem;" *ngFor="let personaje of personajes">
+        <div class="col">
+          <img [src]="personaje.image" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">{{personaje.name}}</h5>
+            <button (click)="verPersonaje(personaje)" type="button" class="btn btn-info azul">Ver Personaje</button>
+          </div>
+      </div>
+  </div>
+</div>

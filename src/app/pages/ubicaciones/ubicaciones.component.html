@@ -1,0 +1,12 @@
+<div class="container fadeIn slow">
+    <app-lista-ubicaciones [lugares]="lugares"></app-lista-ubicaciones>
+
+    <div class="search-results"
+         infiniteScroll
+         [infiniteScrollDistance]="2"
+         [infiniteScrollUpDistance]="1.5"
+         [infiniteScrollThrottle]="50"
+         (scrolled)="onScroll()">
+    </div>
+    
+</div>

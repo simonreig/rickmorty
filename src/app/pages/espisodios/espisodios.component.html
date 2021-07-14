@@ -1,0 +1,15 @@
+<div class="container fadeIn slow">
+    <div class="text-center">
+        <i class="fas fa-sync mt-3"></i>
+    </div>
+    <app-episodio-card [episodio]="episodios"></app-episodio-card>
+
+    <div class="search-results"
+         infiniteScroll
+         [infiniteScrollDistance]="2"
+         [infiniteScrollUpDistance]="1.5"
+         [infiniteScrollThrottle]="50"
+         (scrolled)="onScroll()">
+    </div>
+
+</div>

@@ -1,0 +1,18 @@
+<div class="container fadeIn slow">
+    <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Buscar personaje" autocomplete="off" (keyup)="buscar(termino.value)" #termino>
+        <button class="btn btn-outline-warning" type="button" (click)="buscar(termino.value)">Buscar</button>
+      </form>
+      <br>
+<app-cards-personajes [personajes] ="personajes"></app-cards-personajes>
+</div>
+
+
+
+<div class="search-results fadeIn slow" 
+     infiniteScroll 
+     [infiniteScrollDistance]="2" 
+     [infiniteScrollUpDistance]="1.5" 
+     [infiniteScrollThrottle]="50" 
+     (scrolled)="onScrollDown()">
+</div>

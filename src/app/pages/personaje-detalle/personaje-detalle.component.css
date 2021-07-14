@@ -1,0 +1,17 @@
+.container{
+    margin-top: 20px;
+}
+
+img{
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+@media all and (max-width: 500px) {
+
+    img{
+        border-radius: 10px;
+        margin-right: 0px;
+    }
+
+}
